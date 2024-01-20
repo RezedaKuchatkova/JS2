@@ -1,0 +1,44 @@
+* {
+    margin: 5;
+    padding: 10;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font: 400 16px/1.5 sans-serif;
+}
+
+.task {
+    background-color: #dd101050;
+    width: 35%;
+    height: max-content;
+    text-align: center;
+    
+}
+
+.task:hover {
+    background-color: #00000070;
+}
+
+.task::before {
+    content: '';
+    position: absolute;
+    left: -75px;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 7px;
+    background-color: #00000050;
+}
+
+.task:hover::before {
+    background-color: #00000070;
+}
+
+.active::before {
+    background-color: #00000050;
+}
